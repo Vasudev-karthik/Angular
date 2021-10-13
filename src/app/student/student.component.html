@@ -1,0 +1,36 @@
+
+<form>
+    <table align="center">
+        <thead>
+        <tr>
+            <th>Student id</th>
+            <th>Student Name</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let dataItem of StudentsList">
+                <td>{{dataItem.Stud_Id}}</td>
+                <td>{{dataItem.Stud_Name}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+<style>
+ table,th,td{
+     border: 1px solid grey;
+     border-collapse: collapse;
+     padding: 5px;
+ }
+
+ table tr:nth-child(odd){
+     background-color: #f1f1f1;
+ }
+
+ table tr:nth-child(even){
+     background-color: #ffffff;
+ }
+
+ 
+</style>
